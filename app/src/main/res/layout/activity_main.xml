@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_50dp"
+        android:text="@string/enter_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputnumber"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/enterMobileNumber"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/smsedit"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_sms"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/inputnumber"
+        app:layout_constraintStart_toStartOf="@+id/inputnumber"
+        app:layout_constraintTop_toBottomOf="@id/inputnumber" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/callbtn"
+        android:layout_marginTop="@dimen/dimens_100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        app:layout_constraintEnd_toEndOf="@+id/inputnumber"
+        app:layout_constraintStart_toStartOf="@+id/inputnumber"
+        app:layout_constraintTop_toBottomOf="@id/inputnumber" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/smsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sms"
+        app:layout_constraintEnd_toEndOf="@+id/callbtn"
+        app:layout_constraintStart_toStartOf="@+id/callbtn"
+        app:layout_constraintTop_toBottomOf="@id/callbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

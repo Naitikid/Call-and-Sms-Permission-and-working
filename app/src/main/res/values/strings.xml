@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Call and Sms Application</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="call">Call</string>
+    <string name="sms">SMS</string>
+    <string name="enterMobileNumber">Enter Mobile Number</string>
+    <string name="permissionalready">Permission already granted</string>
+    <string name="grantcallpermission">Call Permission granted</string>
+    <string name="callpermissiondenied">Call Permission Denied</string>
+    <string name="grantsmspermission">SMS Permission granted</string>
+    <string name="smspermissiondenied">SMS Permission Denied</string>
+    <string name="gotosetting">Go To Setting</string>
+    <string name="enter_sms">Enter SMS</string>
+    <string name="massagesend">Sucessfully massage send</string>
+</resources>
